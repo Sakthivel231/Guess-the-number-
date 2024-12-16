@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Guess the Number!</h1>
+    <p>Guess a number between 1 and 100:</p>
+
+    <div class="input-container">
+      <input type="number" id="guess" placeholder="Enter your guess" />
+      <button id="submit">Submit</button>
+    </div>
+
+    <div class="feedback">
+      <p id="message"></p>
+      <p id="attempts">Attempts: 0</p>
+    </div>
+
+    <button id="restart" class="hidden">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Number Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Guess the Number Game</h1>
+    
+    <!-- Prompt for user to enter name -->
+    <div id="name-container">
+      <p>Enter your name:</p>
+      <input type="text" id="player-name" placeholder="Your Name">
+      <button id="start-game">Start New Game</button>
+    </div>
+
+    <!-- Game Section -->
+    <div id="game-section" class="hidden">
+      <p id="welcome-message"></p>
+      <p>Guess a 4-digit number:</p>
+      <input type="number" id="guess" max="9999" placeholder="Enter 4 digits" min="1000" />
+      <button id="submit-guess">Submit Guess</button>
+      
+      <div id="feedback">
+        <p id="result-message"></p>
+        <p id="move-count">Moves: 0</p>
+        <p id="timer">Time: 0s</p>
+      </div>
+
+      <button id="restart" class="hidden">Play Again</button>
+    </div>
+
+    <!-- Best Score Section -->
+    <div id="best-score-section" class="hidden">
+      <h2>Best Score</h2>
+      <p id="best-player">Best Player: --</p>
+      <p id="best-time-moves">Best Time & Moves: --</p>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>
